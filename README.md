@@ -10,6 +10,20 @@
 300.6M raw tokens  →  877k brief tokens  (−99.7%)     measured across 21 real repos
 ```
 
+## Demos
+
+**`vibe-pilot scan`** — what your repo costs an agent, in milliseconds:
+
+![scan demo](docs/assets/demo-scan.gif)
+
+**`vibe-pilot focus scanner gitignore`** — rank files around a topic, 1-hop neighbors included:
+
+![focus demo](docs/assets/demo-focus.gif)
+
+**`vibe-pilot mcp`** — the same engine as an MCP server over stdio:
+
+![mcp demo](docs/assets/demo-mcp.gif)
+
 ## The problem
 
 Modern agents are context-limited and context-expensive. Drop a real repository into Cursor or Claude Code and you get:
