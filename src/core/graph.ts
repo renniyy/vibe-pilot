@@ -435,3 +435,5 @@ export function buildGraph(root: string, files: FileInfo[]): GraphResult {
 
   return { imports, importedBy, entries, reachable, cold, edgeCount, workspacePackages };
 }
+
+// import graph: JS/TS + Python, workspaces, tsconfig paths
