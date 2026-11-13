@@ -1,0 +1,61 @@
+{
+  "name": "vibe-pilot",
+  "version": "0.1.4",
+  "description": "Context optimizer for AI engineers: prunes boilerplate, compresses dependency trees, and ships a focused .context/ brief before you feed your codebase to Cursor, Claude Code, or Windsurf.",
+  "type": "module",
+  "license": "MIT",
+  "author": "renniyy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renniyy/vibe-pilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/renniyy/vibe-pilot/issues"
+  },
+  "homepage": "https://github.com/renniyy/vibe-pilot#readme",
+  "keywords": [
+    "mcp",
+    "context",
+    "ai",
+    "cursor",
+    "claude-code",
+    "windsurf",
+    "token",
+    "cli",
+    "codebase"
+  ],
+  "bin": {
+    "vibe-pilot": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\"",
+    "bench": "node scripts/benchmark.mjs",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "commander": "^12.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

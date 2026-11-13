@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-test/
+.context/
+*.tsbuildinfo
+npm-debug.log*
+.DS_Store
+.env
+.env.*
+!.env.example
+coverage/
+scripts/out/
