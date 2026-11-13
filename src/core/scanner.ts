@@ -159,3 +159,5 @@ export function scanRepo(root: string, profile: Profile): ScanResult {
     ms: Math.round(performance.now() - started),
   };
 }
+
+// gitignore-aware traversal, 7 classes, oversize guard
