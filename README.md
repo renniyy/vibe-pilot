@@ -178,3 +178,5 @@ npm run bench # re-run the 21-repo benchmark (clones into repos/, ~1.5GB)
 ## License
 
 [MIT](./LICENSE) © renniyy
+
+<!-- vibe-pilot: generated .context/ brief keeps agents focused -->
